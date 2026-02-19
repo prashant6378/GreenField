@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Target, Eye, Users, Globe, Award, ChevronRight, X } from "lucide-react";
 import { asset } from "../utils/asset";
 
-
 // === THEME CONSTANTS ===
 const THEME = {
   textDark: "text-[#1B4D3E]",
@@ -114,15 +113,15 @@ With a strong engineering foundation, Firoza works at the intersection of petrol
   ];
 
   return (
-    <div className="pt-20">
+    <div className="pt-20 overflow-hidden">
       {/* ================= HERO ================= */}
       {/* Updated Background to Sage Green */}
-      <section className={`${THEME.bgSage} ${THEME.textDark} py-20`}>
-        <div className="max-w-7xl mx-auto px-4 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
+      <section className={`${THEME.bgSage} ${THEME.textDark} py-16 md:py-20`}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 md:mb-6">
             About Greenfield Energy
           </h1>
-          <p className="text-xl max-w-3xl mx-auto leading-relaxed font-medium">
+          <p className="text-lg sm:text-xl max-w-3xl mx-auto leading-relaxed font-medium">
             Leading the future of energy consultancy with innovative solutions
             and unparalleled expertise.
           </p>
@@ -130,14 +129,14 @@ With a strong engineering foundation, Firoza works at the intersection of petrol
       </section>
 
       {/* ================= OUR STORY ================= */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-16 items-center">
+      <section className="py-16 md:py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:grid md:grid-cols-2 gap-10 md:gap-16 items-center">
           {/* LEFT TEXT */}
           <div>
-            <h2 className={`text-4xl font-bold ${THEME.textDark} mb-6`}>
+            <h2 className={`text-3xl sm:text-4xl font-bold ${THEME.textDark} mb-4 md:mb-6`}>
               Our Story
             </h2>
-            <div className="space-y-4 text-gray-700 leading-relaxed">
+            <div className="space-y-4 text-gray-700 leading-relaxed text-sm sm:text-base">
               <p>
                 Founded in 2015, Greenfield Energy has established itself as a
                 premier provider of oil and gas consultancy and software
@@ -161,36 +160,36 @@ With a strong engineering foundation, Firoza works at the intersection of petrol
           </div>
 
           {/* RIGHT IMAGE */}
-          <div className="relative">
+          <div className="relative mt-8 md:mt-0 px-4 md:px-0">
             <img
               src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800"
               alt="Team collaboration"
-              className="rounded-2xl shadow-2xl"
+              className="rounded-2xl shadow-2xl w-full"
             />
-            {/* Updated Box Color to Dark Green */}
-            <div className={`absolute -bottom-6 -right-6 ${THEME.bgSage} text-[#1B4D3E] p-6 rounded-xl shadow-xl`}>
-              <div className="text-4xl font-bold mb-1">9+</div>
-              <div className="text-sm">Years of Excellence</div>
+            {/* Updated Box Color to Dark Green, Adjusted Positioning for Mobile */}
+            <div className={`absolute -bottom-4 right-0 sm:-bottom-6 sm:-right-6 ${THEME.bgSage} text-[#1B4D3E] p-4 sm:p-6 rounded-xl shadow-xl`}>
+              <div className="text-3xl sm:text-4xl font-bold mb-1">9+</div>
+              <div className="text-xs sm:text-sm">Years of Excellence</div>
             </div>
           </div>
         </div>
       </section>
 
       {/* ================= VISION / MISSION & ACHIEVEMENTS ================= */}
-      <section className={`py-20 ${THEME.bgLight}`}>
-        <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-16 items-center">
+      <section className={`py-16 md:py-20 ${THEME.bgLight}`}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:grid md:grid-cols-2 gap-10 md:gap-16 items-center">
           {/* Achievements */}
           <div className="order-2 md:order-1">
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-2 gap-4 sm:gap-6">
               {achievements.map((item, index) => (
                 <div
                   key={index}
-                  className="bg-white p-8 rounded-xl shadow-md text-center hover:shadow-xl transition"
+                  className="bg-white p-6 sm:p-8 rounded-xl shadow-md text-center hover:shadow-xl transition"
                 >
-                  <div className={`text-4xl font-bold ${THEME.textDark} mb-2`}>
+                  <div className={`text-2xl sm:text-3xl lg:text-4xl font-bold ${THEME.textDark} mb-2`}>
                     {item.metric}
                   </div>
-                  <div className="text-gray-700 font-medium">{item.label}</div>
+                  <div className="text-sm sm:text-base text-gray-700 font-medium">{item.label}</div>
                 </div>
               ))}
             </div>
@@ -198,23 +197,23 @@ With a strong engineering foundation, Firoza works at the intersection of petrol
 
           {/* Vision & Mission */}
           <div className="order-1 md:order-2">
-            <div className="flex items-center gap-4 mb-6">
-              <Eye className={`w-12 h-12 ${THEME.textDark}`} />
-              <h2 className={`text-4xl font-bold ${THEME.textDark}`}>Our Vision</h2>
+            <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
+              <Eye className={`w-10 h-10 sm:w-12 sm:h-12 ${THEME.textDark}`} />
+              <h2 className={`text-3xl sm:text-4xl font-bold ${THEME.textDark}`}>Our Vision</h2>
             </div>
 
-            <p className="text-lg text-gray-700 leading-relaxed mb-8">
+            <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-6 sm:mb-8">
               To provide world-class consultancy and innovative software
               solutions that drive sustainability and operational excellence in
               the energy sector.
             </p>
 
-            <div className="flex items-center gap-4 mb-6">
-              <Target className={`w-12 h-12 ${THEME.textDark}`} />
-              <h2 className={`text-4xl font-bold ${THEME.textDark}`}>Our Mission</h2>
+            <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
+              <Target className={`w-10 h-10 sm:w-12 sm:h-12 ${THEME.textDark}`} />
+              <h2 className={`text-3xl sm:text-4xl font-bold ${THEME.textDark}`}>Our Mission</h2>
             </div>
 
-            <p className="text-lg text-gray-700 leading-relaxed">
+            <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
               To deliver research-driven, customer-focused solutions that help
               our clients optimize workflows, reduce emissions, and innovate for
               a sustainable future.
@@ -224,32 +223,32 @@ With a strong engineering foundation, Firoza works at the intersection of petrol
       </section>
 
       {/* ================= CORE VALUES ================= */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className={`text-4xl md:text-5xl font-bold ${THEME.textDark} mb-4`}>
+      <section className="py-16 md:py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className={`text-3xl sm:text-4xl md:text-5xl font-bold ${THEME.textDark} mb-4`}>
               Our Core Values
             </h2>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto">
               The principles that guide everything we do.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
             {values.map((value, index) => (
               <div
                 key={index}
-                className={`text-center p-8 rounded-xl ${THEME.bgLight} hover:shadow-xl transition-transform duration-300 hover:-translate-y-2`}
+                className={`text-center p-6 sm:p-8 rounded-xl ${THEME.bgLight} hover:shadow-xl transition-transform duration-300 hover:-translate-y-2`}
               >
-                <div className={`${THEME.bgSage} w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6`}>
-                  <value.icon className="w-10 h-10 text-white" />
+                <div className={`${THEME.bgSage} w-16 h-16 sm:w-20 sm:h-20 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6`}>
+                  <value.icon className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
                 </div>
 
-                <h3 className={`text-2xl font-bold ${THEME.textDark} mb-4`}>
+                <h3 className={`text-xl sm:text-2xl font-bold ${THEME.textDark} mb-3 sm:mb-4`}>
                   {value.title}
                 </h3>
 
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
                   {value.description}
                 </p>
               </div>
@@ -259,28 +258,28 @@ With a strong engineering foundation, Firoza works at the intersection of petrol
       </section>
 
       {/* ================= OUR TEAM ================= */}
-      <section className={`py-20 ${THEME.bgLight}`}>
-        <div className="max-w-7xl mx-auto px-4">
+      <section className={`py-16 md:py-20 ${THEME.bgLight}`}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Heading */}
-          <div className="text-center mb-16">
-            <h2 className={`text-4xl md:text-5xl font-bold ${THEME.textDark} mb-4`}>
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className={`text-3xl sm:text-4xl md:text-5xl font-bold ${THEME.textDark} mb-4`}>
               Our Leadership & Team
             </h2>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto">
               A blend of industry veterans and professionals driving innovation
               in petroleum engineering, technology, and sustainability.
             </p>
           </div>
 
           {/* Team Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
             {teamMembers.map((member, index) => (
               <div
                 key={index}
                 className={`bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden flex flex-col group h-full border-t-4 border-[#1B4D3E]`}
               >
-                {/* Image Area - Kept in the grid card */}
-                <div className="h-72 overflow-hidden relative">
+                {/* Image Area */}
+                <div className="h-64 sm:h-72 overflow-hidden relative">
                   <img
                     src={member.image}
                     alt={member.name}
@@ -289,16 +288,16 @@ With a strong engineering foundation, Firoza works at the intersection of petrol
                 </div>
 
                 {/* Card Content */}
-                <div className="p-6 flex-1 flex flex-col">
-                  <h3 className={`text-xl font-bold ${THEME.textDark} mb-1`}>
+                <div className="p-5 sm:p-6 flex-1 flex flex-col">
+                  <h3 className={`text-lg sm:text-xl font-bold ${THEME.textDark} mb-1`}>
                     {member.name}
                   </h3>
-                  <p className="text-xs font-bold uppercase tracking-wider text-red-600 mb-4">
+                  <p className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-red-600 mb-3 sm:mb-4">
                     {member.role}
                   </p>
                   
                   {/* Truncated Bio (3 Lines Max) */}
-                  <p className="text-gray-600 text-sm leading-relaxed mb-6 line-clamp-3">
+                  <p className="text-gray-600 text-xs sm:text-sm leading-relaxed mb-5 sm:mb-6 line-clamp-3">
                     {member.bio}
                   </p>
 
@@ -306,10 +305,10 @@ With a strong engineering foundation, Firoza works at the intersection of petrol
                   <div className="mt-auto">
                     <button
                       onClick={() => setSelectedMember(member)}
-                      className={`inline-flex items-center ${THEME.textDark} font-bold text-sm hover:text-red-600 transition-colors group/btn`}
+                      className={`inline-flex items-center ${THEME.textDark} font-bold text-xs sm:text-sm hover:text-red-600 transition-colors group/btn`}
                     >
                       Read Full Profile
-                      <ChevronRight className="w-4 h-4 ml-1 transition-transform group-hover/btn:translate-x-1" />
+                      <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4 ml-1 transition-transform group-hover/btn:translate-x-1" />
                     </button>
                   </div>
                 </div>
@@ -328,29 +327,29 @@ With a strong engineering foundation, Firoza works at the intersection of petrol
             onClick={() => setSelectedMember(null)}
           ></div>
 
-          {/* Modal Content - TEXT ONLY, NO IMAGE */}
-          <div className={`bg-white rounded-2xl shadow-2xl w-full max-w-3xl max-h-[90vh] overflow-y-auto relative z-10 animate-in fade-in zoom-in duration-300 border-t-8 border-[#1B4D3E]`}>
+          {/* Modal Content */}
+          <div className={`bg-white rounded-2xl shadow-2xl w-full max-w-3xl max-h-[85vh] sm:max-h-[90vh] overflow-y-auto relative z-10 animate-in fade-in zoom-in duration-300 border-t-8 border-[#1B4D3E]`}>
             
             {/* Close Button */}
             <button 
               onClick={() => setSelectedMember(null)}
-              className="absolute top-4 right-4 z-20 p-2 rounded-full text-gray-400 hover:text-red-600 hover:bg-gray-100 transition-all"
+              className="absolute top-3 right-3 sm:top-4 sm:right-4 z-20 p-2 rounded-full text-gray-400 hover:text-red-600 hover:bg-gray-100 transition-all"
             >
-              <X className="w-6 h-6" />
+              <X className="w-5 h-5 sm:w-6 sm:h-6" />
             </button>
 
             {/* Modal Text Content */}
-            <div className="p-8 md:p-12">
-              <div className="mb-8 border-b border-gray-100 pb-6">
-                <h3 className={`text-3xl md:text-4xl font-bold ${THEME.textDark} mb-2`}>
+            <div className="p-6 sm:p-8 md:p-12">
+              <div className="mb-6 sm:mb-8 border-b border-gray-100 pb-4 sm:pb-6 pr-6">
+                <h3 className={`text-2xl sm:text-3xl md:text-4xl font-bold ${THEME.textDark} mb-2`}>
                   {selectedMember.name}
                 </h3>
-                <p className="text-sm md:text-base font-bold uppercase tracking-wider text-red-600">
+                <p className="text-xs sm:text-sm md:text-base font-bold uppercase tracking-wider text-red-600">
                   {selectedMember.role}
                 </p>
               </div>
 
-              <div className="prose prose-lg text-gray-700 leading-relaxed whitespace-pre-line">
+              <div className="prose prose-sm sm:prose-base md:prose-lg text-gray-700 leading-relaxed whitespace-pre-line">
                 {selectedMember.bio}
               </div>
             </div>
@@ -358,137 +357,152 @@ With a strong engineering foundation, Firoza works at the intersection of petrol
           </div>
         </div>
       )}
-{/* ================= OUR PARTNERS ================= */}
-<section className="py-20 bg-white">
-  <div className="max-w-7xl mx-auto px-4">
 
-    <h2 className={`text-4xl md:text-5xl font-bold text-center ${THEME.textDark} mb-16`}>
-      Our Partners
-    </h2>
+      {/* ================= OUR PARTNERS ================= */}
+      <section className="py-16 md:py-20 bg-white overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-    {/* ================= OUR CLIENTS ================= */}
-    <div className="mb-20">
-     <h3 className={`text-2xl md:text-3xl font-bold ${THEME.textDark} mb-8`}>
-        Our Clients
-      </h3>
+          <h2 className={`text-3xl sm:text-4xl md:text-5xl font-bold text-center ${THEME.textDark} mb-12 md:mb-16`}>
+            Our Partners
+          </h2>
 
-      <div className="overflow-hidden relative h-[120px] md:h-[140px] -mt-4 md:-mt-6">
-        <div className="flex items-center whitespace-nowrap animate-marquee hover:[animation-play-state:paused]">
-          {[
-            { img: asset("/images/Oil India.png"), size: "h-22 md:h-24 max-w-[180px]" },
-            { img: asset("/images/petronas_carigali.png"), size: "h-24 md:h-26 max-w-[210px]" },
-            { img: asset("/images/Cairn.png"), size: "h-24 md:h-26 max-w-[200px]" },
-            { img: asset("/images/spoc.png"), size: "h-30 md:h-34 max-w-[230px]" },
-            { img: asset("/images/KIRI.jpg"), size: "h-30 md:h-34 max-w-[230px]" },
-            { img: asset("/images/SEE.png"), size: "h-24 md:h-26 max-w-[200px]" },
+          {/* ================= OUR CLIENTS ================= */}
+          <div className="mb-16 md:mb-20">
+            <h3 className={`text-xl sm:text-2xl md:text-3xl font-bold ${THEME.textDark} mb-6 md:mb-8 text-center md:text-left`}>
+              Our Clients
+            </h3>
 
-            // duplicate
-            { img: asset("/images/Oil India.png"), size: "h-22 md:h-24 max-w-[180px]" },
-            { img: asset("/images/petronas_carigali.png"), size: "h-24 md:h-26 max-w-[210px]" },
-            { img: asset("/images/Cairn.png"), size: "h-24 md:h-26 max-w-[200px]" },
-          ].map((item, i) => (
-            <div
-              key={i}
-              className="flex-shrink-0 w-72 mx-4 flex items-center justify-center"
-            >
-              <img
-                src={item.img}
-                alt="client-logo"
-                className={`${item.size} object-contain transition-transform duration-300 hover:scale-105`}
-              />
+            <div className="overflow-hidden relative h-[100px] md:h-[140px]">
+              <div className="flex w-max items-center whitespace-nowrap animate-marquee hover:[animation-play-state:paused]">
+                {/* Complete Set + Complete Duplicated Set for Flawless Loop */}
+                {[
+                  { img: asset("/images/Oil India.png"), size: "h-16 sm:h-20 md:h-24 max-w-[140px] md:max-w-[180px]" },
+                  { img: asset("/images/petronas_carigali.png"), size: "h-20 sm:h-22 md:h-26 max-w-[160px] md:max-w-[210px]" },
+                  { img: asset("/images/Cairn.png"), size: "h-20 sm:h-22 md:h-26 max-w-[150px] md:max-w-[200px]" },
+                  { img: asset("/images/spoc.png"), size: "h-24 sm:h-28 md:h-34 max-w-[180px] md:max-w-[230px]" },
+                  { img: asset("/images/KIRI.jpg"), size: "h-24 sm:h-28 md:h-34 max-w-[180px] md:max-w-[230px]" },
+                  { img: asset("/images/SEE.png"), size: "h-20 sm:h-22 md:h-26 max-w-[150px] md:max-w-[200px]" },
+
+                  // Exact duplicate for perfect marquee loop
+                  { img: asset("/images/Oil India.png"), size: "h-16 sm:h-20 md:h-24 max-w-[140px] md:max-w-[180px]" },
+                  { img: asset("/images/petronas_carigali.png"), size: "h-20 sm:h-22 md:h-26 max-w-[160px] md:max-w-[210px]" },
+                  { img: asset("/images/Cairn.png"), size: "h-20 sm:h-22 md:h-26 max-w-[150px] md:max-w-[200px]" },
+                  { img: asset("/images/spoc.png"), size: "h-24 sm:h-28 md:h-34 max-w-[180px] md:max-w-[230px]" },
+                  { img: asset("/images/KIRI.jpg"), size: "h-24 sm:h-28 md:h-34 max-w-[180px] md:max-w-[230px]" },
+                  { img: asset("/images/SEE.png"), size: "h-20 sm:h-22 md:h-26 max-w-[150px] md:max-w-[200px]" },
+                ].map((item, i) => (
+                  <div
+                    key={i}
+                    className="flex-shrink-0 w-48 sm:w-60 md:w-72 mx-2 sm:mx-4 flex items-center justify-center"
+                  >
+                    <img
+                      src={item.img}
+                      alt="client-logo"
+                      className={`${item.size} object-contain transition-transform duration-300 hover:scale-105`}
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
-          ))}
-        </div>
-      </div>
-    </div>
+          </div>
 
-    {/* ================= GLOBAL SERVICE PARTNERS ================= */}
-    <div className="mb-8 md:mb-10">
-      <h3 className={`text-2xl md:text-3xl font-bold ${THEME.textDark} mb-8`}>
-        Global Service Partners
-      </h3>
+          {/* ================= GLOBAL SERVICE PARTNERS ================= */}
+          <div className="mb-16 md:mb-20">
+            <h3 className={`text-xl sm:text-2xl md:text-3xl font-bold ${THEME.textDark} mb-6 md:mb-8 text-center md:text-left`}>
+              Global Service Partners
+            </h3>
 
-      <div className="overflow-hidden relative h-[120px] md:h-[140px]">
-        <div className="flex items-center whitespace-nowrap animate-marquee hover:[animation-play-state:paused]">
-          {[
-            asset("/images/Permian Oil & Gas.png"),
-            asset("/images/TPS.jpg"),
-            asset("/images/Sutera.png"),
-            asset("/images/Rara.png"),
-            asset("/images/GoldenGateBridge.png"),
+            <div className="overflow-hidden relative h-[100px] md:h-[140px]">
+              <div className="flex w-max items-center whitespace-nowrap animate-marquee hover:[animation-play-state:paused]">
+                {/* Complete Set + Complete Duplicated Set for Flawless Loop */}
+                {[
+                  asset("/images/Permian Oil & Gas.png"),
+                  asset("/images/TPS.jpg"),
+                  asset("/images/Sutera.png"),
+                  asset("/images/Rara.png"),
+                  asset("/images/GoldenGateBridge.png"),
 
-            // duplicate
-            asset("/images/Permian Oil & Gas.png"),
-            asset("/images/TPS.jpg"),
-            asset("/images/Sutera.png"),
-          ].map((img, i) => (
-            <div
-              key={i}
-              className="flex-shrink-0 w-80 mx-4 flex items-center justify-center"
-            >
-              <img
-                src={img}
-                alt="service-partner-logo"
-                className="h-24 md:h-26 max-w-[240px] object-contain transition-transform duration-300 hover:scale-105"
-              />
+                  // Exact duplicate
+                  asset("/images/Permian Oil & Gas.png"),
+                  asset("/images/TPS.jpg"),
+                  asset("/images/Sutera.png"),
+                  asset("/images/Rara.png"),
+                  asset("/images/GoldenGateBridge.png"),
+                ].map((img, i) => (
+                  <div
+                    key={i}
+                    className="flex-shrink-0 w-56 sm:w-64 md:w-80 mx-2 sm:mx-4 flex items-center justify-center"
+                  >
+                    <img
+                      src={img}
+                      alt="service-partner-logo"
+                      className="h-20 sm:h-24 md:h-26 max-w-[180px] md:max-w-[240px] object-contain transition-transform duration-300 hover:scale-105"
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
-          ))}
-        </div>
-      </div>
-    </div>
+          </div>
 
-    {/* ================= TECHNOLOGY PARTNERS ================= */}
-    <div>
-      <h3 className={`text-2xl md:text-3xl font-bold ${THEME.textDark} mb-8`}>
-        Technology Partners
-      </h3>
+          {/* ================= TECHNOLOGY PARTNERS ================= */}
+          <div>
+            <h3 className={`text-xl sm:text-2xl md:text-3xl font-bold ${THEME.textDark} mb-6 md:mb-8 text-center md:text-left`}>
+              Technology Partners
+            </h3>
 
-      <div className="overflow-hidden relative h-[120px] md:h-[140px]">
-        <div className="flex items-center whitespace-nowrap animate-marquee hover:[animation-play-state:paused]">
-          {[
-            { img: asset("/images/images_1.png"), size: "h-22 md:h-24 max-w-[190px]" },
-            { img: asset("/images/iit-dhanbad-feature-img-01.jpg"), size: "h-26 md:h-28 max-w-[230px]" },
-            { img: asset("/images/NSP.png"), size: "h-22 md:h-24 max-w-[180px]" },
-            { img: asset("/images/UGreen.jpg"), size: "h-22 md:h-24 max-w-[180px]" },
-            { img: asset("/images/Adishree.jpeg"), size: "h-28 md:h-32 max-w-[220px]" },
-            { img: asset("/images/HOPON.png"), size: "h-24 md:h-26 max-w-[200px]" },
+            <div className="overflow-hidden relative h-[100px] md:h-[140px]">
+              <div className="flex w-max items-center whitespace-nowrap animate-marquee hover:[animation-play-state:paused]">
+                 {/* Complete Set + Complete Duplicated Set for Flawless Loop */}
+                {[
+                  { img: asset("/images/images_1.png"), size: "h-16 sm:h-20 md:h-24 max-w-[140px] md:max-w-[190px]" },
+                  { img: asset("/images/iit-dhanbad-feature-img-01.jpg"), size: "h-20 sm:h-24 md:h-28 max-w-[170px] md:max-w-[230px]" },
+                  { img: asset("/images/NSP.png"), size: "h-16 sm:h-20 md:h-24 max-w-[130px] md:max-w-[180px]" },
+                  { img: asset("/images/UGreen.jpg"), size: "h-16 sm:h-20 md:h-24 max-w-[130px] md:max-w-[180px]" },
+                  { img: asset("/images/Adishree.jpeg"), size: "h-20 sm:h-26 md:h-32 max-w-[160px] md:max-w-[220px]" },
+                  { img: asset("/images/HOPON.png"), size: "h-20 sm:h-22 md:h-26 max-w-[150px] md:max-w-[200px]" },
 
-            // duplicate
-            { img: asset("/images/images_1.png"), size: "h-22 md:h-24 max-w-[190px]" },
-            { img: asset("/images/iit-dhanbad-feature-img-01.jpg"), size: "h-26 md:h-28 max-w-[230px]" },
-            { img: asset("/images/NSP.png"), size: "h-22 md:h-24 max-w-[180px]" },
-          ].map((item, i) => (
-            <div
-              key={i}
-              className="flex-shrink-0 w-72 mx-4 flex items-center justify-center"
-            >
-              <img
-                src={item.img}
-                alt="tech-logo"
-                className={`${item.size} object-contain transition-transform duration-300 hover:scale-105`}
-              />
+                  // Exact duplicate
+                  { img: asset("/images/images_1.png"), size: "h-16 sm:h-20 md:h-24 max-w-[140px] md:max-w-[190px]" },
+                  { img: asset("/images/iit-dhanbad-feature-img-01.jpg"), size: "h-20 sm:h-24 md:h-28 max-w-[170px] md:max-w-[230px]" },
+                  { img: asset("/images/NSP.png"), size: "h-16 sm:h-20 md:h-24 max-w-[130px] md:max-w-[180px]" },
+                  { img: asset("/images/UGreen.jpg"), size: "h-16 sm:h-20 md:h-24 max-w-[130px] md:max-w-[180px]" },
+                  { img: asset("/images/Adishree.jpeg"), size: "h-20 sm:h-26 md:h-32 max-w-[160px] md:max-w-[220px]" },
+                  { img: asset("/images/HOPON.png"), size: "h-20 sm:h-22 md:h-26 max-w-[150px] md:max-w-[200px]" },
+                ].map((item, i) => (
+                  <div
+                    key={i}
+                    className="flex-shrink-0 w-48 sm:w-60 md:w-72 mx-2 sm:mx-4 flex items-center justify-center"
+                  >
+                    <img
+                      src={item.img}
+                      alt="tech-logo"
+                      className={`${item.size} object-contain transition-transform duration-300 hover:scale-105`}
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
-          ))}
+          </div>
+
+          {/* ================= MARQUEE ANIMATION ================= */}
+          <style>{`
+            .animate-marquee {
+              animation: marquee 20s linear infinite;
+            }
+            @keyframes marquee {
+              0% { transform: translateX(0); }
+              100% { transform: translateX(-50%); }
+            }
+            /* Slow down marquee slightly on smaller screens for readability */
+            @media (max-width: 768px) {
+              .animate-marquee {
+                animation: marquee 15s linear infinite;
+              }
+            }
+          `}</style>
+
         </div>
-      </div>
-    </div>
-
-    {/* ================= MARQUEE ANIMATION ================= */}
-    <style>{`
-      .animate-marquee {
-        animation: marquee 10s linear infinite;
-      }
-      @keyframes marquee {
-        0% { transform: translateX(0); }
-        100% { transform: translateX(-50%); }
-      }
-    `}</style>
-
-  </div>
-</section>
-
-
-
+      </section>
 
     </div>
   );

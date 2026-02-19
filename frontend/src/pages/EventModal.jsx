@@ -1,10 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { X, Calendar, Linkedin, Download } from "lucide-react";
+import {
+  X,
+  Calendar,
+  Linkedin,
+  Download,
+  ChevronLeft,
+  ChevronRight,
+} from "lucide-react";
 
 const EventModal = ({ event, onClose }) => {
+  const [currentImage, setCurrentImage] = useState(0);
+
+  const nextImage = () => {
+    if (!event.images) return;
+    setCurrentImage((prev) =>
+      prev === event.images.length - 1 ? 0 : prev + 1
+    );
+  };
+
+  const prevImage = () => {
+    if (!event.images) return;
+    setCurrentImage((prev) =>
+      prev === 0 ? event.images.length - 1 : prev - 1
+    );
+  };
+
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+      
       {/* Backdrop */}
       <motion.div
         initial={{ opacity: 0 }}
@@ -19,7 +43,7 @@ const EventModal = ({ event, onClose }) => {
         initial={{ scale: 0.95, opacity: 0, y: 20 }}
         animate={{ scale: 1, opacity: 1, y: 0 }}
         exit={{ scale: 0.95, opacity: 0, y: 20 }}
-        className="relative w-full max-w-3xl bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col max-h-[85vh]"
+        className="relative w-full max-w-4xl bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col max-h-[90vh]"
       >
         {/* Header */}
         <div className="bg-[#AFE1AF] p-6 md:p-8 text-[#1B4D3E] relative">
@@ -42,6 +66,8 @@ const EventModal = ({ event, onClose }) => {
 
         {/* Body */}
         <div className="p-6 md:p-10 overflow-y-auto">
+
+          {/* Content */}
           <div className="prose prose-lg max-w-none text-gray-700 whitespace-pre-line">
             {event.fullContent}
           </div>
@@ -57,11 +83,63 @@ const EventModal = ({ event, onClose }) => {
               </span>
             ))}
           </div>
+
+          {/* ===== IMAGE GALLERY AT BOTTOM ===== */}
+          {event.images && event.images.length > 0 && (
+            <div className="mt-12">
+
+              {/* Image Frame */}
+              <div className="relative bg-gray-100 rounded-xl p-4 flex justify-center items-center">
+
+                <img
+                  src={event.images[currentImage]}
+                  alt={`event-${event.id}`}
+                  className="max-h-[70vh] w-auto object-contain rounded-lg transition-all duration-300"
+                />
+
+                {/* Arrows */}
+                {event.images.length > 1 && (
+                  <>
+                    <button
+                      onClick={prevImage}
+                      className="absolute left-3 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-md transition"
+                    >
+                      <ChevronLeft size={20} />
+                    </button>
+
+                    <button
+                      onClick={nextImage}
+                      className="absolute right-3 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-md transition"
+                    >
+                      <ChevronRight size={20} />
+                    </button>
+                  </>
+                )}
+              </div>
+
+              {/* Dots Indicator */}
+              {event.images.length > 1 && (
+                <div className="flex justify-center gap-2 mt-4">
+                  {event.images.map((_, index) => (
+                    <div
+                      key={index}
+                      onClick={() => setCurrentImage(index)}
+                      className={`w-3 h-3 rounded-full cursor-pointer transition ${
+                        currentImage === index
+                          ? "bg-[#1B4D3E]"
+                          : "bg-gray-300"
+                      }`}
+                    />
+                  ))}
+                </div>
+              )}
+            </div>
+          )}
         </div>
 
         {/* Footer */}
         <div className="bg-gray-50 border-t border-gray-100 p-6 flex flex-wrap items-center gap-4">
-          {/* Back Button */}
+
           <button
             onClick={onClose}
             className="text-gray-600 hover:text-[#1B4D3E] font-medium"
@@ -69,7 +147,6 @@ const EventModal = ({ event, onClose }) => {
             ← Back to Events
           </button>
 
-          {/* PDF Download */}
           {event.pdf && (
             <button
               onClick={() => window.open(event.pdf, "_blank")}
@@ -80,7 +157,6 @@ const EventModal = ({ event, onClose }) => {
             </button>
           )}
 
-          {/* LinkedIn */}
           <a
             href={event.link}
             target="_blank"
