@@ -234,7 +234,8 @@ export default function RockMaster() {
       {/* FINAL CTA */}
       <section className="py-20 bg-[#0c2f26] text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-white">Bring operational excellence to your workshops — Try AutoPro</h2>
-        <button className="mt-8 px-8 py-3 bg-[#20c997] text-white font-semibold rounded-xl shadow-lg hover:bg-[#17a984] transition">
+        <button onClick={() => navigate("/contact")}
+         className="mt-8 px-8 py-3 bg-[#20c997] text-white font-semibold rounded-xl shadow-lg hover:bg-[#17a984] transition">
           Connect With Our Team
         </button>
       </section>

@@ -477,7 +477,9 @@ export default function SandMaster() {
           Partner with a team that brings deep sand management expertise.
         </h2>
 
-        <button className="mt-8 px-8 py-3 bg-[#20c997] text-white rounded-xl shadow-lg hover:bg-[#17a984] transition">
+        <button onClick={() => navigate("/contact")}
+         className="mt-8 px-8 py-3 bg-[#20c997] text-white rounded-xl shadow-lg hover:bg-[#17a984] transition">
+           
           Connect With Our Team
         </button>
       </section>

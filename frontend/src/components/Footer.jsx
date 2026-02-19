@@ -42,14 +42,14 @@ const Footer = () => {
                 <Youtube className="w-6 h-6" />
               </a>
 
-              <a
+              {/* <a
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-green-500 transition-colors"
               >
                 <Facebook className="w-6 h-6" />
-              </a>
+              </a> */}
             </div>
           </div>
 
@@ -107,12 +107,21 @@ const Footer = () => {
             </h4>
 
             <ul className="space-y-3">
-              <li className="flex items-start space-x-3">
-                <Mail className="w-5 h-5 text-green-500 mt-0.5" />
-                <span className="text-sm">
-                  Support@greenfield.energy
-                </span>
-              </li>
+            <li className="flex items-start space-x-3">
+  <Mail className="w-5 h-5 text-green-500 mt-0.5" />
+  <span className="text-sm">
+    <a
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=Support@greenfield.energy"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="hover:text-green-600 transition-colors"
+>
+  Support@greenfield.energy
+</a>
+
+  </span>
+</li>
+
 
               <li className="flex items-start space-x-3">
                 <Phone className="w-5 h-5 text-green-500 mt-0.5" />

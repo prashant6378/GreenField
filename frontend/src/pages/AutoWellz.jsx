@@ -579,7 +579,8 @@ export default function AutoWellz() {
 
     {/* CTA BUTTONS */}
     <div className="flex flex-wrap justify-center gap-4 mt-10">
-      <button className="px-8 py-3 bg-[#1B4D3E] text-white rounded-xl font-semibold hover:bg-[#1aa87d] transition">
+      <button onClick={() => navigate("/schedule-demo")}
+       className="px-8 py-3 bg-[#1B4D3E] text-white rounded-xl font-semibold hover:bg-[#1aa87d] transition">
         Request Demo
       </button>
 
