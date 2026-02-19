@@ -7,6 +7,7 @@ const eventsData = [
     preview: "8,188.63 kg CO₂e. That’s the footprint of the National Symposium at IIT (ISM) Dhanbad, measured by our product 'GREEN'.",
     fullContent: `🚨 One-day conference. 8,188.63 kg CO₂e.
     That’s the footprint of the National Symposium at Indian Institute of Technology (Indian School of Mines), Dhanbad, measured by Greenfield Oil and Trading Services Pvt. Ltd. using their product "GREEN".
+    
 
     📊 Breakdown of emissions:
     - 58.3% from travel & accommodation ✈️🏨
@@ -33,9 +34,14 @@ const eventsData = [
     preview: "Super thrilled to share this proud moment! Our CTO took the spotlight delivering insights on AI, ML, and Data Analytics in Sand Management.",
     fullContent: `Super thrilled to share this proud moment for G.O.T.S.! 🎉💚
     Our amazing CTO, Mr. V.C Babu Sivakumar, is taking the spotlight as the Keynote Speaker at IIT (ISM) Dhanbad! 🚀
+    
 
     He’ll be delivering powerful insights on AI, ML, Data Analytics & IoT in Sand Management — shaping the future of innovation and sustainability!
     So excited and proud to see him represent us on such a prestigious platform! 🔥🌍`,
+    images: [
+      asset("/images/Events/E2.jpg"),
+    ],
+
     tags: ["#ProudMoment", "#GOTS", "#InnovationInAction", "#Leadership", "#IITISM", "#TechForGood", "#AI", "#ML", "#IoT"],
     link: "https://www.linkedin.com/feed/update/urn:li:activity:7403709282371960832",
     pdf: asset("/pdfs/event2.pdf") // HAS PDF
@@ -53,6 +59,12 @@ const eventsData = [
     Here’s to building risk-free facilities, optimizing production, and unlocking the full potential of intelligent sand management.
 
     The momentum is real — and the impact will be too. ✨`,
+     images: [
+      asset("/images/Events/E3.1.jpg"),
+      asset("/images/Events/E3.2.jpg"),
+      asset("/images/Events/E3.3.jpg"),
+      asset("/images/Events/E3.4.jpg"),
+    ],
     tags: ["#OilIndia", "#SandMaster", "#RockMaster", "#SandManagement", "#SoftwareLaunch", "#GOTS"],
     link: "https://www.linkedin.com/feed/update/urn:li:activity:7398642868266950656",
     // NO PDF
@@ -65,6 +77,18 @@ const eventsData = [
     fullContent: `Thrilled to share that we have successfully completed RockMaster™ training — GOTS’ proprietary software for sand production tendency assessment and advanced sand management by preparation of MEM, CDP and ESPI models — with Oil India Limited at their Duliajan OIL facility.
 
     A great step forward in enabling smarter, data-driven sand management decisions in upstream operations. Proud of the collaboration and the value RockMaster™ continues to deliver in the field.`,
+    images: [
+      asset("/images/Events/E3.1.jpg"),
+      asset("/images/Events/E3.2.jpg"),
+      asset("/images/Events/E3.3.jpg"),
+      asset("/images/Events/E3.4.jpg"),
+      asset("/images/Events/E3.5.jpg"),
+      asset("/images/Events/E3.6.jpg"),
+      asset("/images/Events/E3.7.jpg"),
+      asset("/images/Events/E3.8.jpg"),
+      asset("/images/Events/E3.9.jpg"),
+      
+    ],
     tags: ["#RockMaster", "#GOTS", "#OilIndia", "#SandManagement", "#Upstream", "#EnergyTech", "#RockMechanics"],
     link: "https://www.linkedin.com/feed/update/urn:li:activity:7398322827528962048",
     // NO PDF
@@ -82,6 +106,11 @@ const eventsData = [
     Our flagship sustainability platform GREEN—designed to help organizations monitor, analyze, and optimize their environmental performance—resonated strongly with the event’s vision of a cleaner, data-driven future. 🌿
 
     It was truly inspiring to engage with so many brilliant minds and see how technology continues to accelerate the global energy transition. Here’s to innovation, collaboration, and a greener tomorrow! 🌍`,
+    images: [
+      asset("/images/Events/E4.1.jpg"),
+      asset("/images/Events/E4.2.jpg"),
+      
+    ],
     tags: ["#REI2025", "#RenewableEnergy", "#Sustainability", "#GreenTech", "#GOTS", "#EnergyTransition"],
     link: "https://www.linkedin.com/feed/update/urn:li:activity:7391017460960804865",
     // NO PDF
@@ -97,6 +126,14 @@ const eventsData = [
     Kudos to the enthusiastic participants, the expert trainers, and the Oil India Limited / ऑयलइंडिया लिमिटेड team for making this initiative such a success 🙌. Moments like these reflect the power of collaboration, learning, and innovation in driving operational excellence.
 
     Here’s to more such journeys of growth, excellence, and teamwork! 🚀`,
+    images: [
+      asset("/images/Events/E6.1.jpg"),
+      asset("/images/Events/E6.2.jpg"),
+      asset("/images/Events/E6.3.jpg"),
+      asset("/images/Events/E6.4.jpg"),
+      asset("/images/Events/E6.5.jpg"),
+      
+    ],
     tags: ["#OILIndia", "#GOTS", "#HSM", "#Training", "#Teamwork", "#OperationalExcellence"],
     link: "https://www.linkedin.com/feed/update/urn:li:activity:7375826124666253313",
     // NO PDF
@@ -113,6 +150,12 @@ const eventsData = [
 
     Kudos to our young engineer Kashish Bhardwaj for representing us with great enthusiasm! 🙏 
     Appreciate the support from our UAE partners Rara Energy! 🙏`,
+    images: [
+      asset("/images/Events/E7.1.jpg"),
+      asset("/images/Events/E7.2.jpg"),
+      asset("/images/Events/E7.3.jpg"),
+      asset("/images/Events/E7.4.jpg"),
+    ],
     tags: ["#Collaboration", "#SouthSudan", "#SandManagement", "#GlobalProjects", "#GOTS", "#EnergySector"],
     link: "https://www.linkedin.com/feed/update/urn:li:activity:7367481322992230400",
     // NO PDF
@@ -127,6 +170,12 @@ const eventsData = [
     A big thank you to Rara Energy Consulting and Swati Gupta for inviting me. It was a truly rewarding experience to engage with industry professionals, share insights, and have an interactive discussion on this critical topic.
 
     Greenfield Oil and Trading Services Pvt. Ltd.`,
+    images: [
+      asset("/images/Events/E8.1.jpg"),
+      asset("/images/Events/E8.2.jpg"),
+      asset("/images/Events/E8.3.jpg"),
+      asset("/images/Events/E8.4.jpg"),
+    ],
     tags: ["#CarbonAccounting", "#OilAndGas", "#CCUS", "#Sustainability", "#CarbonManagement", "#EnergyTransition"],
     link: "https://www.linkedin.com/feed/update/urn:li:activity:7366327048493068291",
     // NO PDF
@@ -145,6 +194,12 @@ const eventsData = [
     To all the students embarking on this journey, we can’t wait to see how you leverage SandMaster to tackle real-world challenges! 🌎💡
 
     Let’s shape the future of Oil & Gas education together! 💪🔬`,
+    images: [
+      asset("/images/Events/E9.1.jpg"),
+      asset("/images/Events/E9.2.jpg"),
+      asset("/images/Events/E9.3.jpg"),
+      asset("/images/Events/E9.4.jpg"),
+    ],
     tags: ["#GreenfieldOilAndTrading", "#SandMaster", "#IITISM", "#EducationInitiative", "#IndustryCollaboration", "#StudentEmpowerment"],
     link: "https://www.linkedin.com/feed/update/urn:li:activity:7304015664371875840",
     // NO PDF
@@ -162,6 +217,12 @@ const eventsData = [
     We had the opportunity to connect with industry leaders, clients, and partners, exchanging insights on the future of energy, sustainability, and innovation. The conference reinforced the importance of collaboration and technology in shaping the industry's next phase. 
 
     A big thank you to the organizers and everyone we met—it was a pleasure sharing perspectives and exploring new opportunities. Looking forward to leveraging these connections and driving impactful solutions in the industry!`,
+    images: [
+      asset("/images/Events/E10.1.jpg"),
+      asset("/images/Events/E10.2.jpg"),
+      asset("/images/Events/E10.3.jpg"),
+      asset("/images/Events/E10.4.jpg"),
+    ],
     tags: ["#IEW2025", "#GOTS", "#EnergyInnovation", "#Collaboration", "#Sustainability"],
     link: "https://www.linkedin.com/feed/update/urn:li:activity:7296449158285074432",
     // NO PDF
