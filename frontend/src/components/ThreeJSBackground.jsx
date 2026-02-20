@@ -330,7 +330,7 @@ export default function ThreeJSBackground({ scale = 1 }) {
       <Canvas
         camera={{
           position: isMobile ? [0, 0, 32] : [0, 0, 26], // 🔥 push camera back on mobile
-          fov: isMobile ? 25 : 20,
+          fov: isMobile ? 20 : 15,
         }}
         dpr={isMobile ? 1 : window.devicePixelRatio} // 🔥 performance boost
       >
