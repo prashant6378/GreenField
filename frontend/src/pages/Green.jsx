@@ -280,7 +280,7 @@ export default function Green() {
     {/* IMAGE — RIGHT SIDE */}
     <div>
       <img
-        src={asset("/images/greenOperational.png")}
+        src={asset("/images/gop.png")}
         alt="operational sustainability"
         className="w-full max-w-md rounded-xl shadow-lg object-contain"
       />
