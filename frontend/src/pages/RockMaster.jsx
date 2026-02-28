@@ -115,52 +115,66 @@ export default function RockMaster() {
       </section>
 
       {/* THREE FEATURE CARDS */}
-      <section className="py-20 bg-[#f7fffb]">
-        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10">
+<section className="py-20 bg-[#f7fffb]">
+  <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10">
 
-          {[
-            {
-              title: "Mechanical Earth Modelling",
-              items: [
-                "Preparing MEMs to generate rock mechanical properties.",
-                "Estimate stresses (max horizontal, min horizontal, overburden).",
-                "Generate dynamic & static MEM models calibrated to field/lab data.",
-              ],
-            },
-            {
-              title: "Sanding Tendency",
-              items: [
-                "Generate CDP curves for open & cased-hole wells.",
-                "Rank wells (high / medium / low sand tendency).",
-                "Identify catastrophic failure conditions and calibrate with field data.",
-              ],
-            },
-            {
-              title: "Field-Life Sand Modelling",
-              items: [
-                "Reservoir pressure based sand production modelling.",
-                "Wellbore stability diagrams & CDP triangles.",
-                "Assess effects of drawdown, water cut and gas production on sanding.",
-              ],
-            },
-          ].map((card) => (
-            <div
-              key={card.title}
-              className="rounded-3xl border border-[#1B4D3E]/20 p-8 bg-white"
-            >
-              <h3 className="text-3xl font-bold text-[#1B4D3E] mb-6">
-                {card.title}
-              </h3>
-              <ul className="space-y-4 text-[#1B4D3E]/90">
-                {card.items.map((i) => (
-                  <li key={i}>{i}</li>
-                ))}
-              </ul>
-            </div>
+    {[
+      {
+        title: "Mechanical Earth Modelling",
+        image: "/images/RM_MEM.jpeg",   // Add your image path here
+        items: [
+          "Preparing MEMs to generate rock mechanical properties.",
+          "Estimate stresses (max horizontal, min horizontal, overburden).",
+          "Generate dynamic & static MEM models calibrated to field/lab data.",
+        ],
+      },
+      {
+        title: "Sanding Tendency",
+        image: "/images/RM_ST.jpeg",
+        items: [
+          "Generate CDP curves for open & cased-hole wells.",
+          "Rank wells (high / medium / low sand tendency).",
+          "Identify catastrophic failure conditions and calibrate with field data.",
+        ],
+      },
+      {
+        title: "Field-Life Sand Modelling",
+        image: "/images/RM_FL.jpeg",
+        items: [
+          "Reservoir pressure based sand production modelling.",
+          "Wellbore stability diagrams & CDP triangles.",
+          "Assess effects of drawdown, water cut and gas production on sanding.",
+        ],
+      },
+    ].map((card) => (
+      <div
+        key={card.title}
+        className="rounded-3xl border border-[#1B4D3E]/20 p-8 bg-white shadow-md hover:shadow-xl transition duration-300"
+      >
+        {/* Image */}
+        <img
+          src={card.image}
+          alt={card.title}
+          className="w-full h-48 object-cover rounded-2xl mb-6"
+        />
+
+        <h3 className="text-3xl font-bold text-[#1B4D3E] mb-6">
+          {card.title}
+        </h3>
+
+        <ul className="space-y-4 text-[#1B4D3E]/90">
+          {card.items.map((i) => (
+            <li key={i} className="flex items-start gap-2">
+              <span className="text-[#1B4D3E]">•</span>
+              <span>{i}</span>
+            </li>
           ))}
+        </ul>
+      </div>
+    ))}
 
-        </div>
-      </section>
+  </div>
+</section>
 
       {/* FAQ */}
       <section className="py-20 bg-white">
@@ -233,7 +247,7 @@ export default function RockMaster() {
 
       {/* FINAL CTA */}
       <section className="py-20 bg-[#0c2f26] text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-white">Bring operational excellence to your workshops — Try AutoPro</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-white">Bring operational excellence to your workshops — Try RockMaster</h2>
         <button onClick={() => navigate("/contact")}
          className="mt-8 px-8 py-3 bg-[#20c997] text-white font-semibold rounded-xl shadow-lg hover:bg-[#17a984] transition">
           Connect With Our Team

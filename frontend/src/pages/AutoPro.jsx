@@ -85,16 +85,19 @@ export default function AutoPro() {
           </div>
 
           {/* RIGHT: Vimeo video */}
-          <div className="flex justify-center">
+          <div className="flex justify-center md:justify-end">
             <div className="w-full max-w-2xl shadow-lg rounded-2xl overflow-hidden bg-white">
               <div className="relative pb-[56.25%]">
-                <iframe
-                  src="https://player.vimeo.com/video/686737424?autoplay=1&muted=1&loop=1&controls=0&playsinline=1"
-                  frameBorder="0"
-                  allow="autoplay; fullscreen; picture-in-picture"
-                  allowFullScreen
-                  className="absolute inset-0 w-full h-full"
-                ></iframe>
+               <video
+                  src={asset("/video/autopro.mp4")}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  controls
+                  preload="auto"
+                  className="absolute inset-0 w-full h-full object-cover bg-black"
+                />
               </div>
             </div>
           </div>
@@ -145,7 +148,7 @@ export default function AutoPro() {
       {/* ... ALL OTHER SECTIONS REMAIN 100% UNCHANGED ... */}
     {/* DETAILED SECTION — Overview */}
       <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10">
+        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
           <div>
             <h2 className="text-3xl font-bold text-[#1B4D3E] mb-6">What is AutoPro?</h2>
             <ul className="space-y-4 text-[#1B4D3E]/80 leading-relaxed">
@@ -158,7 +161,7 @@ export default function AutoPro() {
 
           <div>
             <img
-              src="https://www.greenfield.energy/wp-content/uploads/2022/04/img2.png"
+              src={asset("/images/autoprooverview.jpg")}
               alt="Workshop assembly"
               className="rounded-xl shadow-lg"
             />
@@ -171,7 +174,7 @@ export default function AutoPro() {
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
           <div>
             <img
-              src="https://www.greenfield.energy/wp-content/uploads/2022/04/img3.png"
+              src={asset("/images/autoprodatabase.webp")}
               alt="database management"
               className="rounded-xl shadow-lg"
             />
@@ -211,7 +214,7 @@ export default function AutoPro() {
 
           <div>
             <img
-              src="https://www.greenfield.energy/wp-content/uploads/2022/04/img4.png"
+              src={asset("/images/autoprotracking.jpg")}
               alt="personnel tracking"
               className="rounded-xl shadow-lg"
             />
@@ -238,7 +241,7 @@ export default function AutoPro() {
 
           <div>
             <img
-              src="https://www.greenfield.energy/wp-content/uploads/2022/04/img1.png"
+              src={asset("/images/autoproquality.jpg")}
               alt="quality assurance"
               className="rounded-xl shadow-lg"
             />
@@ -265,7 +268,7 @@ export default function AutoPro() {
 
           <div>
             <img
-              src="https://www.greenfield.energy/wp-content/uploads/2022/04/img4.png"
+              src={asset("/images/autprocost.jpg")}
               alt="cost analysis"
               className="rounded-xl shadow-lg"
             />
@@ -291,8 +294,8 @@ export default function AutoPro() {
             </div>
             <div>
               <img
-                src="https://www.greenfield.energy/wp-content/uploads/2022/04/img7.jpg"
-                alt="cost analysis"
+                src={asset("/images/autooperational.jpg")}
+                alt="operational excellence"
                 className="rounded-xl shadow-lg"
               />
             </div>
@@ -319,7 +322,7 @@ export default function AutoPro() {
 
           <div>
             <img
-              src="https://www.greenfield.energy/wp-content/uploads/2022/04/img3.png"
+              src={asset("/images/autoprosupport.webp")}
               alt="support and licensing"
               className="rounded-xl shadow-lg"
             />

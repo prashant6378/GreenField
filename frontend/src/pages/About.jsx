@@ -77,14 +77,12 @@ At Greenfield, Abhishek plays a pivotal role in the execution of sand management
 `,
     },
     {
-      name: "Sejal Jain",
-      role: "Business Development Manager & HR Manager",
-      image: asset("/images/team/Sejal.jpeg"),
-      bio: `She is a dedicated professional with over 2+ years of experience in Business Development and Human Resources, combining strategic thinking with strong people-management skills. She holds an MBA in HR and Marketing, which enables her to effectively align business growth strategies with talent and organizational development.
+      name: "Firoza Sheikh",
+      role: "Petroleum Engineer | Product Champion-GREEN",
+      image: asset("/images/team/Firoza.jpeg"),
+      bio: `She is a Petroleum Engineer and Product Champion for GREEN product, where she leads research and development efforts shaping next-generation sustainability and carbon accounting solutions across energy, industrial, and allied sectors. Her work contributes to building data-driven systems that support organizations in navigating the transition toward a low-carbon and climate-resilient future.
 
-In her current role, Sejal manages business development initiatives, client coordination, and partnership building, while also overseeing core HR functions such as recruitment, onboarding, employee engagement, and performance management. Her ability to handle multiple responsibilities ensures smooth internal operations and sustained business growth.
-
-Driven by a results-oriented and people-first approach, Sejal contributes to building efficient processes, strengthening workplace culture, and supporting the company’s long-term objectives through structured planning and collaborative execution.`,
+With a strong engineering foundation, Firoza works at the intersection of petroleum engineering and ESG, translating complex operational data into credible carbon inventories and actionable emission reduction pathways. She plays a key role in shaping GREEN’s methodology and product direction, ensuring technical rigor, regulatory alignment, and long-term relevance as sustainability becomes central to future business and operational decision-making.`,
     },
     {
       name: "Swagat Pradhan",
@@ -101,14 +99,15 @@ With a strong interest in digital transformation, he is currently expanding his 
       bio: `Petroleum Engineer with a B. Tech from Chandigarh University (2019–2023), currently working at Greenfield Oil & Trading Services since October 2023. Actively involved in digital sand management projects, with hands-on experience in modeling and analysis using RockMaster™ and SandMaster™.
 
 Passionate about applying technology-driven solutions to enhance upstream operational efficiency.`,
-    },
-    {
-      name: "Firoza Sheikh",
-      role: "Petroleum Engineer | Product Champion-GREEN",
-      image: asset("/images/team/Firoza.jpeg"),
-      bio: `She is a Petroleum Engineer and Product Champion for GREEN product, where she leads research and development efforts shaping next-generation sustainability and carbon accounting solutions across energy, industrial, and allied sectors. Her work contributes to building data-driven systems that support organizations in navigating the transition toward a low-carbon and climate-resilient future.
+    }, { 
+     name: "Sejal Jain",
+      role: "Business Development Manager & HR Manager",
+      image: asset("/images/team/Sejal.jpeg"),
+      bio: `She is a dedicated professional with over 2+ years of experience in Business Development and Human Resources, combining strategic thinking with strong people-management skills. She holds an MBA in HR and Marketing, which enables her to effectively align business growth strategies with talent and organizational development.
 
-With a strong engineering foundation, Firoza works at the intersection of petroleum engineering and ESG, translating complex operational data into credible carbon inventories and actionable emission reduction pathways. She plays a key role in shaping GREEN’s methodology and product direction, ensuring technical rigor, regulatory alignment, and long-term relevance as sustainability becomes central to future business and operational decision-making.`,
+In her current role, Sejal manages business development initiatives, client coordination, and partnership building, while also overseeing core HR functions such as recruitment, onboarding, employee engagement, and performance management. Her ability to handle multiple responsibilities ensures smooth internal operations and sustained business growth.
+
+Driven by a results-oriented and people-first approach, Sejal contributes to building efficient processes, strengthening workplace culture, and supporting the company’s long-term objectives through structured planning and collaborative execution.`,
     },
   ];
 

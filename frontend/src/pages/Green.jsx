@@ -179,7 +179,7 @@ export default function Green() {
 
           <div>
             <img
-              src="https://www.greenfield.energy/wp-content/uploads/2024/02/p-2.jpg"
+              src={asset("/images/greenenergydashboard.png")}
               alt="energy dashboard"
               className="rounded-xl shadow-lg object-contain w-full h-auto"
             />
@@ -221,7 +221,7 @@ export default function Green() {
 
           <div>
             <img
-              src="https://www.greenfield.energy/wp-content/uploads/2024/02/p-3.jpg"
+              src={asset("/images/greencompliance.jpg")}
               alt="compliance"
               className="rounded-xl shadow-lg object-contain w-full h-auto"
             />
@@ -236,7 +236,7 @@ export default function Green() {
 
           <div>
             <img
-              src={asset("/images/greencostsaving.png")}
+              src={asset("/images/greencostsaving.jpg")}
               alt="cost analysis"
               className="w-full max-w-md rounded-xl shadow-lg object-contain"
             />
@@ -280,7 +280,7 @@ export default function Green() {
     {/* IMAGE — RIGHT SIDE */}
     <div>
       <img
-        src={asset("/images/greenOperational.png")}
+        src={asset("/images/greenOperational.PNG")}
         alt="operational sustainability"
         className="w-full max-w-md rounded-xl shadow-lg object-contain"
       />

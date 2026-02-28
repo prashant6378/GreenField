@@ -216,7 +216,7 @@ export default function SandMaster() {
     {/* RIGHT IMAGE (ALIGNMENT FIXED) */}
     <div className="flex justify-center">
       <img
-        src="https://www.greenfield.energy/wp-content/uploads/2021/10/Capture-of-Facility.jpg"
+        src={asset("/images/sandmasterworkflow.png")}
         alt="SandMaster Workflow"
         className="w-full max-w-2xl rounded-2xl shadow-lg object-contain"
       />
@@ -271,7 +271,7 @@ export default function SandMaster() {
       {/* RIGHT IMAGE */}
       <div className="flex justify-center">
         <img
-          src="https://www.greenfield.energy/wp-content/uploads/2021/10/Particle-Size-Distribution-chart.png"
+          src={asset("/images/sandmasterparticlesize.png")}
           alt="Particle Size Distribution"
           className="w-full max-w-xl rounded-2xl shadow-lg object-contain"
         />
@@ -300,7 +300,7 @@ export default function SandMaster() {
           </div>
 
           <img
-            src="https://www.greenfield.energy/wp-content/uploads/2021/10/Liquid-Rate-vs-Critical-Velocity-chart.png"
+            src={asset("/images/sandmasterliquidrate.png")}
             className="rounded-xl shadow-lg"
           />
 
@@ -326,7 +326,7 @@ export default function SandMaster() {
           </div>
 
           <img
-            src="https://www.greenfield.energy/wp-content/uploads/2021/10/chart-Hydrocyclone.png"
+            src={asset("/images/sandmasterhydrocyclone.png")}
             className="rounded-xl shadow-lg"
           />
 
@@ -356,7 +356,7 @@ export default function SandMaster() {
       {/* RIGHT IMAGE (ALIGNMENT FIXED) */}
       <div className="flex justify-center">
         <img
-          src="https://www.greenfield.energy/wp-content/uploads/2021/10/Dashboard-for-Last-page.jpg"
+          src={asset("/images/sandmasterdashboard.png")}
           alt="Full Field Sand Management"
           className="w-full max-w-2xl rounded-2xl shadow-lg object-contain"
         />
@@ -385,7 +385,7 @@ export default function SandMaster() {
           </div>
 
           <img
-            src="https://www.greenfield.energy/wp-content/uploads/2021/10/Liquid-Rate-vs-Critical-Velocity-chart.png"
+            src={asset("/images/sandmasterlongterm.png")}
             className="rounded-xl shadow-lg"
           />
 
