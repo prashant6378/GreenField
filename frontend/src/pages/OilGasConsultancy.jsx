@@ -473,12 +473,12 @@ export default function OilGasConsultancy() {
 
             {/* Secondary CTAs */}
             <div className="flex flex-wrap gap-4">
-              <a
-                href="/contact"
-                className="inline-flex items-center gap-2 border-2 border-[#1B4D3E] text-[#1B4D3E] px-6 py-3 rounded-lg font-semibold hover:bg-[#AFE1AF] transition"
-              >
-                Request Consultation
-              </a>
+              <Link
+  to="/contact"
+  className="inline-flex items-center gap-2 border-2 border-[#1B4D3E] text-[#1B4D3E] px-6 py-3 rounded-lg font-semibold hover:bg-[#AFE1AF] transition"
+>
+  Request Consultation
+</Link>
 
               <a
                 href="/brochures/Integrated-Sand-Management_Brochure_Rev-Sep2021.pdf"
