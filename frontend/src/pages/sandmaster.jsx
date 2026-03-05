@@ -356,7 +356,7 @@ export default function SandMaster() {
       {/* RIGHT IMAGE (ALIGNMENT FIXED) */}
       <div className="flex justify-center">
         <img
-          src={asset("/images/sandmasterdashboard.png")}
+          src={asset("/images/smdash.png")}
           alt="Full Field Sand Management"
           className="w-full max-w-2xl rounded-2xl shadow-lg object-contain"
         />
