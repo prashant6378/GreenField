@@ -14,7 +14,7 @@ function Earth() {
 
   return (
     <mesh ref={earthRef}>
-      <sphereGeometry args={[3.5, 64, 64]} />
+      <sphereGeometry args={[1.6, 64, 64]} />
       <meshStandardMaterial map={texture} />
     </mesh>
   );
@@ -29,7 +29,7 @@ export default function GlobeBackground() {
         zIndex: 0,
       }}
     >
-      <Canvas camera={{ position: [0, 0, 9] }}>
+      <Canvas camera={{ position: [0, 0, 10], fov: 45 }}>
         <ambientLight intensity={0.35} />
         <directionalLight position={[5, 5, 5]} intensity={1} />
         <Earth />

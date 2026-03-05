@@ -16,7 +16,7 @@ function Earth() {
 
   return (
     <mesh ref={earthRef}>
-      <sphereGeometry args={[2.6, 64, 64]} />
+      <sphereGeometry args={[1.4, 64, 64]} />
       <meshStandardMaterial map={texture} />
     </mesh>
   );
@@ -24,8 +24,8 @@ function Earth() {
 
 export default function RotatingGlobe() {
   return (
-    <div style={{ width: "100%", height: "500px" }}>
-      <Canvas camera={{ position: [0, 0, 8] }}>
+    <div style={{ width: "100%", height: "300px" }}>
+      <Canvas camera={{ position: [0, 0, 12], fov: 45 }}>
         <ambientLight intensity={0.4} />
         <directionalLight position={[5, 5, 5]} intensity={1} />
 
